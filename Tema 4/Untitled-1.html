@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tu Nombre Completo">
+    <meta name="description" content="Página personal creada con HTML">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil Profesional</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f5f8fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 {
+    color: #004080;
+}
+
+section {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+blockquote {
+    background: #eef4ff;
+    border-left: 5px solid #004080;
+    padding: 10px 20px;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    background-color: #004080;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <!-- 🧭 Navegación principal -->
+    <nav>
+        <a href="#datos">Datos personales</a> |
+        <a href="#formacion">Formación</a> |
+        <a href="#habilidades">Habilidades e intereses</a> |
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <hr>
+
+    <!-- 🧱 Encabezado principal -->
+    <header>
+        <h1>Mi Perfil Profesional</h1>
+        <blockquote>
+            “El único modo de hacer un gran trabajo es amar lo que haces.” — Steve Jobs
+        </blockquote>
+    </header>
+
+    <hr>
+
+    <!-- 👤 Sección de Datos Personales -->
+    <!-- Sección de datos personales -->
+    <section id="datos">
+        <h2>Datos Personales</h2>
+
+        <div>
+            <img src="img/foto_perfil.jpg" alt="Foto de perfil" title="Foto personal" width="200" height="200">
+
+            <dl>
+                <dt><strong>Nombre:</strong></dt>
+                <dd>Juan Pérez García</dd>
+
+                <dt><strong>Edad:</strong></dt>
+                <dd>25 años</dd>
+
+                <dt><strong>Ciudad:</strong></dt>
+                <dd>Jaén, España</dd>
+
+                <dt><strong>Correo:</strong></dt>
+                <dd>juanperez@example.com</dd>
+            </dl>
+
+            <p>
+                Soy un <span>apasionado del desarrollo web</span> con interés en la creación de proyectos creativos y funcionales.
+            </p>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- 🎓 Sección de Formación -->
+    <section id="formacion">
+        <h2>Formación</h2>
+        <ol>
+            <li><strong>Grado en Ingeniería Informática</strong> — <em>Universidad de Jaén (2018 - 2022)</em></li>
+            <li><strong>Curso de Desarrollo Web</strong> — <em>Plataforma Online (2023)</em></li>
+            <li><strong>Formación Profesional MEDAC</strong> — <em>Desarrollo de Aplicaciones Web (2024 - Actualidad)</em></li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <!-- 💼 Sección de Habilidades e Intereses -->
+    <section id="habilidades">
+        <h2>Habilidades e Intereses</h2>
+
+        <div>
+            <h3>Habilidades Técnicas</h3>
+            <ul>
+                <li>HTML, CSS y JavaScript</li>
+                <li>Python</li>
+                <li>Git y GitHub</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Intereses Personales</h3>
+            <ul>
+                <li>Videojuegos</li>
+                <li>Fotografía</li>
+                <li><mark>Aprendizaje continuo</mark></li>
+            </ul>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- 🖼️ Sección de Contenido Multimedia -->
+    <section id="multimedia">
+        <h2>Contenido Multimedia</h2>
+        <p>A continuación puedes ver una imagen relacionada con mi formación y el centro donde estudio:</p>
+
+        <img src="img/medac.jpg" alt="Centro MEDAC" title="Centro MEDAC Jaén" width="400" height="250">
+
+        <h3>Ubicación del centro MEDAC Jaén:</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3187.691556081956!2d-3.790652024206449!3d37.77117127198018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd72b8f8b9b6b%3A0x8c1ab95e44e8056!2sMEDAC%20Ja%C3%A9n!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
+            width="400" height="300" style="border:0;" allowfullscreen loading="lazy">
+        </iframe>
+    </section>
+
+    <hr>
+
+    <!-- 📬 Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes visitar mi perfil profesional en <a href="https://github.com/usuario" target="_blank">GitHub</a>.</p>
+
+        <p>También puedes acceder a mi página publicada en <a href="https://usuario.github.io/mi_perfil/" target="_blank">GitHub Pages</a>.</p>
+    </section>
+
+    <hr>
+
+    <!-- 📜 Código de ejemplo -->
+    <pre>
+&lt;!-- Este es un bloque preformateado de ejemplo --&gt;
+&lt;p&gt;Este es un párrafo de ejemplo con formato HTML.&lt;/p&gt;
+    </pre>
+
+    <footer>
+        <p><small>© 2025 Juan Pérez García - Proyecto HTML MEDAC</small></p>
+    </footer>
+
+
+    
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--Comienzo de mi pagina web personal y de los apartados importantes 
+        como mis datos datos personales, mi formacion, habilidades e intereses,
+        contenido multimedia y contacto, contenido multimedia y contacto. -->
+
+
+        <!--1.Estructura del documento de la pagina web de mi perfil profesional -->
+        <meta charset="UFT-8">
+        <title>Mi perfil profesional</title>
+        <meta name="" content="Pagina creada con html">
+        <link rel="sytlesheet" href="style.css">
+        <!--En el siguiente apartado ponemos <sytle> para poder darle fondo, texturas, sombreado -->
+        <style>
+            
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f5f8fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 {
+    color: #004080;
+}
+
+section {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+blockquote {
+    background: #eef4ff;
+    border-left: 5px solid #004080;
+    padding: 10px 20px;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    background-color: #004080;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+        </style>
+
+    </head>
+
+    <body>
+        <body>
+    <header>
+        <h1>Mi perfil profesional</h1>
+        <hr>
+
+        <!-- En este apartado ponemos los apartados de nuestra pagina que deseemos poner -->
+        <nav>
+            <a href="#datos">Datos personales</a> |
+            <a href="#formacion">Formación</a> |
+            <a href="#habilidades">Habilidades e intereses</a> |
+            <a href="#multimedia">Multimedia</a>
+        </nav>
+
+        <blockquote>“En esta página se muestran apartados de mi perfil profesional.”</blockquote>
+    </header>
+
+    <main>
+
+        <!-- Sección de Datos personales -->
+        <section id="datos">
+            <h2>Datos personales</h2>
+            <img src="https://thinkingofrob.files.wordpress.com/2012/10/pl0595-kopie1.jpg"
+                 alt="Foto personal" width="300" height="400">
+
+            <dl>
+                <dt><strong>Nombre:</strong></dt>
+                <dd>Rafael Jaen Porras</dd>
+
+                <dt><strong>Edad:</strong></dt>
+                <dd>18 años</dd>
+
+                <dt><strong>Ciudad:</strong></dt>
+                <dd>Jaén</dd>
+
+                <dt><strong>Correo:</strong></dt>
+                <dd>rjaenporras@gmail.com</dd>
+            </dl>
+
+            <p>
+                Me considero <span> un gran apasionado del desarrollo web</span> con interés en la creación de proyectos creativos y funcionales.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Sección de Formación -->
+        <section id="formacion">
+            <h2>Formación</h2>
+            <ol>
+                <li>Bases de datos</li>
+                <li>Digitalización aplicada a los sectores productivos</li>
+                <li>Entornos de desarrollo</li>
+                <li>Fase de formación en empresa</li>
+                <li>Itinerario personal para la empleabilidad I</li>
+                <li>Programación</li>
+                <li>Sistemas informáticos</li>
+                <li>Sostenibilidad aplicada al sistema productivo</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <!-- Sección de Habilidades e intereses -->
+        <section id="habilidades">
+            <h2>Habilidades e intereses</h2>
+
+            <div>
+                <h3>Habilidades técnicas</h3>
+                <ul>
+                    <li>HTML, CSS y JavaScript</li>
+                    <li>Python</li>
+                    <li>Git y GitHub</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Sección Multimedia -->
+        <section id="multimedia">
+            <h2>Contenido multimedia</h2>
+            <p>A continuación puedes ver una imagen relacionada con mi formación:</p>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFcTVuFttw4mrsJaXSlhaXFl8tt6ret9ECpg&s"
+                 alt="Centro MEDAC" title="Centro MEDAC Jaén" width="400" height="250">
+
+            <h3>Ubicación del centro MEDAC Jaén</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3187.691556081956!2d-3.790652024206449!3d37.77117127198018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd72b8f8b9b6b%3A0x8c1ab95e44e8056!2sMEDAC%20Ja%C3%A9n!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
+                width="600" height="350" style="border:0;" allowfullscreen loading="lazy">
+            </iframe>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><small>© 2025 Rafael Jaen Porras</small></p>
+    </footer>
+
+    <!--  Desplazamiento suave al dar clic a un enlace (opcional) -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</body>
+
+        
+
+        
+
+
+
+    </body>
