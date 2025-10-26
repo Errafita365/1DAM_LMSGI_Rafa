@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Formulario de Currículum</title>
+  <style>
+    /* Estilo simple para emular la apariencia tipo formulario con bordes */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 18px;
+      background: #fff;
+      color: #111;
+    }
+    table.curriculum {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #999;
+      table-layout: fixed;
+    }
+    caption {
+      caption-side: top;
+      text-align: left;
+      font-size: 1.4rem;
+      font-weight: bold;
+      padding: 8px;
+    }
+    th.section {
+      background: #f7f7f7;
+      padding: 6px 10px;
+      border-top: 1px solid #999;
+      border-bottom: 1px solid #999;
+      text-align: left;
+      font-weight: normal;
+    }
+    td, th {
+      padding: 8px;
+      border-bottom: 1px solid #e0e0e0;
+      vertical-align: top;
+    }
+    /* columna de etiquetas más estrecha */
+    col.label { width: 18%; }
+    col.input { width: 82%; }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    select,
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 6px;
+      border: 1px solid #bbb;
+      border-radius: 2px;
+      font-size: 0.95rem;
+    }
+
+    textarea { min-height: 90px; resize: vertical; }
+
+    .inline {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 12px;
+    }
+
+    tfoot td {
+      border-top: 1px solid #999;
+      padding: 12px;
+      text-align: left;
+    }
+
+    .small-label { width: 110px; display: inline-block; }
+    .checkbox-list label { display:block; margin-bottom:4px; }
+
+    /* Responsive: en pantallas pequeñas hace scroll horizontal */
+    @media (max-width: 640px) {
+      table.curriculum { display:block; overflow-x:auto; }
+    }
+  </style>
+</head>
+<body>
+  <form action="#" method="post" class="form-cv" aria-label="Formulario de currículum">
+    <table class="curriculum" role="table" summary="Formulario de curriculum con secciones personales, contacto y otros datos">
+      <caption>Formulario de Currículum</caption>
+
+      <colgroup>
+        <col class="label" />
+        <col class="input" />
+      </colgroup>
+
+      <!-- Encabezado — usamos thead aunque no haya fila de columnas tabulares compleja -->
+      <thead>
+        <tr>
+          <th class="section" colspan="2">— Datos Personales —</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- Nombre -->
+        <tr>
+          <th scope="row"><label for="nombre">Nombre:</label></th>
+          <td><input id="nombre" name="nombre" type="text" placeholder="Tu nombre" /></td>
+        </tr>
+
+        <!-- Apellidos -->
+        <tr>
+          <th scope="row"><label for="apellidos">Apellidos:</label></th>
+          <td><input id="apellidos" name="apellidos" type="text" placeholder="Tus apellidos" /></td>
+        </tr>
+
+        <!-- Edad -->
+        <tr>
+          <th scope="row"><label for="edad">Edad:</label></th>
+          <td><input id="edad" name="edad" type="number" min="0" max="120" style="width:70px;" /></td>
+        </tr>
+
+        <!-- Genero: demostración de rowspan enlazando la etiqueta con opciones -->
+        <tr>
+          <th scope="row">Género:</th>
+          <td>
+            <label class="inline"><input type="radio" name="genero" value="hombre" /> Hombre</label>
+            <label class="inline"><input type="radio" name="genero" value="mujer" /> Mujer</label>
+            <label class="inline"><input type="radio" name="genero" value="otro" /> Otro</label>
+          </td>
+        </tr>
+
+        <!-- Sección contacto (uso de th con colspan para encabezado de sección) -->
+        <tr><th class="section" colspan="2">— Contacto —</th></tr>
+
+        <tr>
+          <th scope="row"><label for="email">Correo Electrónico:</label></th>
+          <td><input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" /></td>
+        </tr>
+
+        <tr>
+          <th scope="row"><label for="cp">Código Postal:</label></th>
+          <td><input id="cp" name="cp" type="text" maxlength="10" style="width:150px;" /></td>
+        </tr>
+
+        <tr>
+          <th scope="row"><label for="direccion">Dirección:</label></th>
+          <td><input id="direccion" name="direccion" type="text" placeholder="Calle, número, piso..." /></td>
+        </tr>
+
+        <tr>
+          <th scope="row"><label for="ciudad">Ciudad:</label></th>
+          <td>
+            <select id="ciudad" name="ciudad">
+              <option value="">-- Seleccione --</option>
+              <option value="jaen">Jaén</option>
+              <option value="madrid">Madrid</option>
+              <option value="sevilla">Sevilla</option>
+              <option value="valencia">Valencia</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row"><label for="password">Contraseña:</label></th>
+          <td><input id="password" name="password" type="password" /></td>
+        </tr>
+
+        <!-- Datos de interés -->
+        <tr><th class="section" colspan="2">— Datos de Interés —</th></tr>
+
+        <tr>
+          <th scope="row">Estado Civil:</th>
+          <td>
+            <label class="inline"><input type="radio" name="estado_civil" value="casado" /> Casado</label>
+            <label class="inline"><input type="radio" name="estado_civil" value="no_casado" /> No Casado</label>
+          </td>
+        </tr>
+
+        <!-- Hobbies: demostramos rowspan para agrupar múltiples checkboxes junto a una sola cabecera -->
+        <tr>
+          <th scope="row" rowspan="4">Hobbies:</th>
+          <td class="checkbox-list"><label><input type="checkbox" name="hobbies" value="deporte" /> Deporte</label></td>
+        </tr>
+        <tr>
+          <td class="checkbox-list"><label><input type="checkbox" name="hobbies" value="cine" /> Cine</label></td>
+        </tr>
+        <tr>
+          <td class="checkbox-list"><label><input type="checkbox" name="hobbies" value="lectura" /> Lectura</label></td>
+        </tr>
+        <tr>
+          <td class="checkbox-list"><label><input type="checkbox" name="hobbies" value="correr" /> Correr</label></td>
+        </tr>
+
+        <!-- Comentarios adicionales: uso de colspan para que textarea ocupe ambas columnas -->
+        <tr><th class="section" colspan="2">— Comentarios Adicionales —</th></tr>
+        <tr>
+          <th scope="row"><label for="comentarios">Escribe aquí tus comentarios:</label></th>
+          <td><textarea id="comentarios" name="comentarios" placeholder="Escribe tus comentarios aquí..."></textarea></td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="2">
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetear</button>
+            <!-- ejemplo de uso de colspan y de small help text -->
+            <small style="margin-left:12px; color:#666;">Los campos no son obligatorios en este ejemplo.</small>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </form>
+</body>
+</html>
