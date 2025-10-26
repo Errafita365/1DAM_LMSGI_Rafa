@@ -71,17 +71,17 @@
         input[type="reset"] {
             background-color: #ccc;
         }
-        </style>
+    </style>
 </head>
 
-    <header>
-        <h1>Formulario de curriculum</h1>
+<header>
+    <h1>Formulario de curriculum</h1>
 
-    </header>
-    <!--Empezamos con la primera sección siendo nuestros datos personales del curriculum 
+</header>
+<!--Empezamos con la primera sección siendo nuestros datos personales del curriculum 
     para ello necesitamos nuestro nombre, apellidos, correo electronico y genero-->
 
-   <!--En cada campo ponemos label para que en nuestro formulario se vean los datos de 
+<!--En cada campo ponemos label para que en nuestro formulario se vean los datos de 
    cada seccion indicandolo con "" y poniendo el nombre de nuevo, luego 
    ponemos el comando llamado input  para hacer un cuadro de texto y poder escribir dentro de el
     y ponemos required para que sea obligatorio rellenar ese campo antes de enviar el formulario.
@@ -95,15 +95,15 @@
     Y el uso de <section> para dividir las secciones del formulario en diferentes apartados.
     Finalmente el <thead> para el encabezado de la tabla, <tbody>
     para el cuerpo de la tabla y <tfoot> para el pie de la tabla.
-    Y siempre cerrando cada etiqueta que abrimos.--> 
+    Y siempre cerrando cada etiqueta que abrimos.-->
 
 
-    <thead>
-        <tr>
-            <th colspan="2" align="center"></th>
-        </tr>
-    </thead>
-    <tbody> 
+<thead>
+    <tr>
+        <th colspan="2" align="center"></th>
+    </tr>
+</thead>
+<tbody>
     <section id "datos personales">
         <h2>Datos Personales</h2>
         <form>
@@ -161,43 +161,57 @@
     <section id "hobbies">
         <h2>Hobbies</h2>
         <form>
-        <label for="deporte">deporte</label>
-        <input type="checkbox" id="deporte" name="deporte"><br><br>
+            <label for="deporte">deporte</label>
+            <input type="checkbox" id="deporte" name="deporte"><br><br>
 
-        <label for="cine">cine</label>
-        <input type="checkbox" id="cine" name="cine" required><br><br>
+            <label for="cine">cine</label>
+            <input type="checkbox" id="cine" name="cine" required><br><br>
 
-        <label for="lectura">lectura</label>
-        <input type="checkbox" id="lectura" name="lectura" required><br><br>
+            <label for="lectura">lectura</label>
+            <input type="checkbox" id="lectura" name="lectura" required><br><br>
 
-        <label for="correr">correr</label>
-        <input type="checkbox" id="correr" name="correr" required><br><br>
-            </form>
+            <label for="correr">correr</label>
+            <input type="checkbox" id="correr" name="correr" required><br><br>
+        </form>
     </section>
-    </tbody>
+</tbody>
 
-        <!--Ultima seccion de los botones de enviar y resetear-->
+<!--Quinta sección siendo la de comentarios adicionales-->
 
-        <tfoot>
-            <tr>
-                <td colspan="2" align="center">
-                    <form>
+<section id "comentarios adicionales">
+    <h2>Comentarios Adicionales</h2>
+    <form>
+    <tr>
+        <th class="section" colspan="2">— Comentarios Adicionales —</th>
+    </tr>
+    <tr>
+        <th scope="row"><label for="comentarios"></th>
+        <td><textarea id="comentarios" name="comentarios" placeholder="Escribe tus comentarios aquí..."></textarea></td>
+    </tr>
+</form>
+</section>
+
+    <!--Ultima seccion de los botones de enviar y resetear-->
+    <tfoot>
+        <tr>
+            <td colspan="2" align="center">
+                <form>
                     <input type="submit" value="Enviar formulario">
                     <input type="reset" value="Resetear formulario">
 
-                </td>
-        </tfoot>
-        </tr>
+            </td>
+    </tfoot>
+    </tr>
 
 
 
 
-        </form>
+    </form>
 
-<body>
+    <body>
 
 
 
-</body>
+    </body>
 
 </html>
