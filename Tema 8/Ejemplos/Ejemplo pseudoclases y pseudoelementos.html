@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases y Pseudoelementos</title>
+    <style>
+        ul li:first-child {
+            color: red;
+        }
+
+        ul li:last-child {
+            color: green;
+
+        }
+
+        ul li:nth-child(2)  {
+            color: blue;
+        }
+
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            background-color: yellow;
+        }
+
+        li::first-letter {
+            text-transform: uppercase;
+        }
+
+        p::after {
+            content:" - Esto es un parrafo";
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>PAISES</p>
+    <ul>
+        <li>españa</li>
+        <li>belgica</li>
+        <li>francia</li>
+    </ul>
+    <p>MENU</p>
+    <a href="#el">Inicio</a>
+    <a href="#e2">Servicios</a>
+    <a href="#e3">Contacto</a>
+
+</body>
+
+</html>

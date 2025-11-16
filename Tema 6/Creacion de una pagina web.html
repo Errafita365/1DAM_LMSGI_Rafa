@@ -1,30 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creacion de una pagina web</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TÍTULO PÁGINA WEB</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
-    <header>
-        <h1>Titulo de una pagina web</h1>
-        
-    </header>
-    <nav> 
-        <div> 
-   <a href="formulario"></a>
-    <a href="multimedia"></a>
-    <a href="tabla"></a>
-    <a href="enlaces"></a>
-
-  
+  <!-- Encabezado  -->
+  <header>
+    <h1>TÍTULO PÁGINA WEB</h1>
+    <nav>
+      <a href="#formulario">FORMULARIO MULTIMEDIA</a>
     </nav>
-     </div>
+  </header>
 
+  <!-- Contenido principal de la pagina web -->
+  <main>
+    <section>
+      <h2>SECCIÓN</h2>
 
+      <article>
+        <h3>PRIMER ARTÍCULO de la sección única</h3>
+        <p>Este es el contenido del primer artículo</p>
+        <p>Una imagen.</p>
+        <figure>
+          <img src="https://kinsta.com/wp-content/uploads/2021/03/HTML-5-Badge-Logo.png" alt="Logo HTML5" width="100">
+          <figcaption><strong>HTML</strong></figcaption>
+        </figure>
+      </article>
 
+      <article>
+        <h3>SEGUNDO ARTÍCULO de la sección única</h3>
+        <p>Este es el contenido del segundo artículo</p>
+        <p>Una imagen.</p>
+        <figure>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxDquiBn7qUllyfutpekSRHKBsAwH7Pm_5xw&s" alt="Logo CSS3" width="100">
+          <figcaption>Fig. 1 - CSS3</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <!-- Formulario multimedia de nuestra pagina web -->
+    <section id="formulario">
+      <h2>Formulario Multimedia</h2>
+      <form>
+        <p><label>Email: 
+          <input type="email" placeholder="nombre@correo.com" required>
+        </label></p>
+
+        <p><label>Fecha de nacimiento: 
+          <input type="date" required>
+        </label></p>
+
+        <p><label>Color favorito: 
+          <input type="color" value="#ff0000">
+        </label></p>
+
+        <p><label>Edad: 
+          <input type="number" min="1" max="120" step="1" required>
+        </label></p>
+
+        <p><label>Nivel de satisfacción:
+          <input type="range" min="0" max="10" step="1" value="5">
+        </label></p>
+
+        <p><label>Progreso del formulario:</label><br>
+          <progress value="70" max="100"></progress> 70% completado
+        </p>
+
+        <p><input type="submit" value="Enviar"></p>
+      </form>
+    </section>
+
+    <!-- Controladores multimedia de nuestra pagina web -->
+    <section>
+      <h2>Multimedia</h2>
+      <p>Reproduce el video de presentación y un audio de fondo:</p>
+      <video src="video/presentacion.mp4" width="400" controls poster="img/poster.png"></video>
+      <audio src="audio/musica.mp3" controls></audio>
+    </section>
+
+    <!-- Preguntas frecuentes  -->
+    <section id="faq">
+      <h2>Preguntas Frecuentes (FAQ)</h2>
+
+      <details>
+        <summary>¿Qué es HTML5?</summary>
+        <p>Es la última versión del lenguaje de marcado para estructurar páginas web.</p>
+      </details>
+
+      <details>
+        <summary>¿Qué son las etiquetas semánticas?</summary>
+        <p>Son etiquetas que describen el contenido, como header, main, section o footer.</p>
+      </details>
+
+      <details>
+        <summary>¿Qué navegadores soportan HTML5?</summary>
+        <p>Todos los navegadores modernos: Chrome, Edge, Firefox y Safari, entre otros.</p>
+      </details>
+    </section>
+
+    <!-- Publicidad / Aside -->
+    <aside>
+      <h4>Publicidad</h4>
+      <p><strong style="font-size: 40px;">SUR</strong></p>
+      <h5>Fecha actual</h5>
+      <p id="fecha"></p>
+    </aside>
+  </main>
+
+  <!-- Pie de pagina de nuestra pagina web -->
+  <footer>
+    <section>
+      <h4>Avisos legales</h4>
+      <a href="#">Política de cookies</a>
+    </section>
+
+    <section>
+      <h4>Redes sociales</h4>
+      <a href="#faq">FAQ (Preguntas frecuentes)</a>
+    </section>
+  </footer>
+
+  <!-- Script  para mostrar fecha actual automáticamente cada vez que entremos en la pagina web -->
+  <script>
+    const fecha = new Date();
+    document.getElementById("fecha").textContent =
+      "Hoy es " + fecha.toLocaleDateString("es-ES");
+  </script>
 </body>
-
 </html>
