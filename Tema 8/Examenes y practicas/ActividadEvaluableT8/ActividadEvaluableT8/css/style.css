@@ -1,0 +1,115 @@
+ body {
+     background-color: lightblue;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+ }
+
+
+ #menu {
+
+     color: blue;
+     text-align: center;
+     background-color: lightblue;
+     background-position: bottom;
+     background-size: 600 px 450px;
+     width: 50%;
+     border: solid 2px blue;
+     padding: 10px;
+     margin-left: 25%;
+
+
+ }
+
+ #componentes {
+     color: blue;
+     background-color: lightblue;
+     border: solid 2px blue;
+ }
+
+ #funcionamiento {
+     color: blue;
+     background-color: lightblue;
+ }
+
+ #datos {
+     color: blue;
+     background-color: lightblue;
+     border: solid 2px blue;
+ }
+
+
+
+
+
+ ul li:first-child {
+     color: blue;
+ }
+
+ ul li:last-child {
+     color: blue;
+ }
+
+ table {
+     border-collapse: collapse;
+     width: 50%;
+     margin-left: 25%;
+     border: solid 3px blue;
+
+ }
+
+ #contenido {
+     color: black;
+     background-color: white;
+     width: 50%;
+     border: solid 2px blue;
+     margin-left: 25%;
+     padding: 15px;
+     background-position: center;
+     background-size: 600px 450px;
+     background-image: url("https://oniad.com/wp-content/uploads/MEDAC_imagotipo_cuadr_azul_PNG.png");
+     background-repeat: no-repeat;
+
+
+ }
+
+ #th {
+     border: solid 3px blue;
+     padding: 8%;
+     background-color: lightblue;
+     font-family: verdana;
+     font-size: 1.5px;
+     color: blue;
+
+ }
+
+ #table,
+ th {
+     color: red;
+     background-color: lightblue;
+     border: solid 1.5px blue;
+     margin: left 25px;
+     padding: 15px;
+     width: 50%;
+     text-align: center;
+
+ }
+
+ #table,
+ tr {
+     color: blue;
+     background-color: white;
+     border: solid 1.5px blue;
+     margin: left 25px;
+     padding: 15px;
+     width: 50%;
+     text-align: center;
+
+
+ }
+
+ table:hover {
+     text-decoration: chocolate;
+     background-color: black;
+
+
+ }
