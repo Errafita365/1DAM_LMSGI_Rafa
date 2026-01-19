@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<libro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+    <titulo>Introduccion a XML</titulo>
+    <autor> Alberto Perez </autor>
+    <autor>Tomas ruiz</autor>
+    <editorial>Paraninfo</editorial>
+
+    </libro>
+    

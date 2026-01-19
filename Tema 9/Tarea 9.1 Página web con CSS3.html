@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web con css3</title>
+
+    <!-- Explicacion de todas las etiquetas style:  -->
+
+    <!-- Estilos CSS3:  -->
+
+    <!-- En este bloque style definimos toda la apariencia visual de la pagina-->
+
+
+
+
+
+    <!--Etiqueta body:
+     Estilos generales del body: fuente, margenes y fondo con degradado -->
+
+    <!-- Etiqueta header:
+    Cabecera del sitio(header): fondo negro y texto centrado-->
+
+    <!-- Etiqueta nav ul:
+     Estilos del menu de navegación(nav) -->
+
+    <!--Etiqueta nav li:
+    Alinear opciones del menu horizontalmente -->
+
+    <!-- Etiqueta nav a: 
+     Enlaces del menu: color blanco y tamaño grande -->
+
+    <!--Etiqueta banner: 
+     Banner principal centrado -->
+
+    <!-- Etiqueta container: 
+     Contenedor general de la pagina -->
+
+    <!-- Etiqueta card:
+     Tarjetas con borde redondeado y fondo blanco-->
+
+    <!-- Etiqueta sobre.mi
+     Seccion sobre mi con elementos alineados horizontalmente-->
+
+    <!--Etiqueta card h2:
+    Encabezados dentro de tarjetas con linea cian decorativa. -->
+
+    <!-- Etiqueta skills span:
+    Estilos para etiquetas de habilidades (skills) -->
+
+    <!--Etiqueta redes sociales
+    Contenedor de redes sociales centrado verticalmente -->
+
+    <!--Etiqueta avatar:
+    Avatar o foto con esquinas redondeadas-->
+
+    <!-- Etiqueta btn.social:
+     Hace de botones de redes sociales-->
+
+    <!-- Etiqueta instagram:
+     Colores especificos para instagram -->
+
+    <!-- Etiqueta github:
+     Colores especificos para github -->
+
+
+    <!-- Etiqueta initials:
+     Iniciales grandes y semi-transparentes en esquina inferior derecha -->
+
+    <!-- Etiqueta multicolumn-section:
+      Seccion con texto en varias columnas -->
+
+    <!--Etiqueta multicol-text:
+    Texto dividido en dos columnas -->
+
+    <!-- Etiqueta multicol-text p:
+     Evitar que los parrafos se corten entre columnas-->
+
+    <!-- Etiqueta btn.hobby:
+     Botones de hobbies con hover -->
+
+    <!--Etiqueta btn-hobby:hover:
+    Efecto hover en los hobbies -->
+
+    <!-- Etiqueta footer:
+     Pie de pagina oscuro y pequeño-->
+
+    <!-- Etiqueta banner h1:
+     Texto principal del banner-->
+
+
+    <!-- Etiqueta banner p:
+     Subtitulo del banner-->
+
+
+
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(#0a0f24, #1a2a6c);
+            color: #333;
+        }
+
+
+        .header {
+            background: 111;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.6em;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+            margin-left: 30px;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            font-size: 1.4em;
+            padding: 14px 20px;
+            text-decoration: none;
+
+        }
+
+        .banner {
+            text-align: center;
+
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+
+        }
+
+        .card {
+            background: rgba(red, green, blue, alpha);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+
+        }
+
+        .sobre-mi {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .card h2 {
+            border-left: 4px solid cyan;
+            padding-left: 10px;
+
+        }
+
+        .skills span {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #00bcd4;
+            margin: 5px;
+            border-radius: 10px;
+            color: black;
+            font-weight: bold;
+
+        }
+
+        .redes-sociales {
+            font-size: 1.6em;
+            margin-bottom: 10px;
+            text-align: right;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 0% 20px;
+
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .header {
+            background-color: #111;
+            ;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.8mm;
+            letter-spacing: normal;
+            margin-bottom: auto;
+
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 0 20px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .banner {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .sobre-mi-contenido {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .sobre-mi-contenido img {
+
+
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-left: 20px;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-left: 20px;
+        }
+
+        /* Estilo de botones */
+        .btn-social {
+            display: inline-block;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-left: 10px;
+            color: white;
+        }
+
+        .instagram {
+            background-color: #4a90e2;
+        }
+
+        .github {
+            background-color: #1a56b8;
+        }
+
+        .initials {
+            position: absolute;
+            bottom: 25px;
+            right: 25px;
+            font-size: 4em;
+            color: #ddd;
+            line-height: 1;
+            opacity: 0.7;
+
+        }
+
+
+        .multicolumn-section {
+            margin-bottom: 40px;
+            padding: 0 10px;
+            color: white;
+        }
+
+        .multicol-text {
+            column-count: 2;
+            column-gap: 40px;
+            line-height: 1.5;
+            color: white;
+        }
+
+        .multicol-text p {
+            break-inside: avoid;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+
+        .hobbies {
+            padding: 0 10px;
+            color: white;
+        }
+
+        .btn-hobby {
+            background-color: white;
+            color: #4a90e2;
+            border: 1px solid #4a90e2;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.2s;
+        }
+
+        .btn-hobby:hover {
+            background-color: #4a90e2;
+            color: white;
+        }
+
+        footer {
+            background-color: #333;
+            color: #ccc;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.8em;
+            margin-top: 30px;
+        }
+
+        .banner h1 {
+            color: white;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin: 0 0 8px 0;
+            text-shadow: 0 3px 8px rgba(0, 0, 0, 0, 35);
+
+        }
+
+        .banner p {
+            font-size: clamp(14px, 2.2vw, 20px);
+            color: rgba(255, 255, 255, 0.95);
+            margin: 0;
+            font-weight: 500;
+            opacity: 0.95;
+
+
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Ejemplos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner con Gradiente [13] -->
+        <section class="banner">
+            <h1>Bienvenidos a mi página web</h1>
+            <p>Aprendiendo CSS paso a paso</p>
+        </section>
+
+        <div class="content-wrapper container">
+            <!-- Sección Sobre Mí (Columna 1) -->
+            <article class="sobre-mi card">
+                <h2>Sobre mí</h2>
+                <div class="sobre-mi-contenido">
+                    <!-- Se utiliza una imagen de marcador de posición -->
+                    <img src="https://www.citypng.com/photo/20680/hd-python-logo-symbol-transparent-png" alt="Avatar"
+                        class="avatar">
+                    <p>Me llamo Rafael Jaén Porras y soy estudiante de desarrollo web. Me encanta crear interfaces
+                        visuales y experimentar con animaciones CSS. Este texto es una demostración del uso de float,
+                        sombras y bordes redondeados.</p>
+                </div>
+            </article>
+
+            <!-- Sección Redes Sociales (Columna 2 / Aside) -->
+            <aside class="redes-sociales card">
+                <h3>Redes sociales</h3>
+                <div class="social-buttons">
+                    <a href="#" class="btn-social instagram">Instagram</a>
+                    <a href="#" class="btn-social github">GitHub</a>
+                </div>
+                <div class="initials">AL</div>
+            </aside>
+        </div>
+
+        <!-- Texto en Multicolumnas [18] -->
+        <section class="multicolumn-section container">
+            <h2>Texto en multicolumnas</h2>
+            <div class="multicol-text">
+                <p>El desarrollo web es un campo fascinante. Permite crear experiencias visuales, productos funcionales
+                    y aplicaciones que usamos cada día. Gracias a CSS podemos controlar la estética general de una web.
+                </p>
+                <p>Las propiedades avanzadas como transformaciones, transiciones, sombras o gradientes permiten
+                    construir interfaces más profesionales e intuitivas.</p>
+            </div>
+        </section>
+
+        <!-- Mis Hobbies -->
+        <section class="hobbies container">
+            <h2>Mis hobbies</h2>
+            <div class="hobby-buttons">
+                <button class="btn-hobby">Jugar</button>
+                <button class="btn-hobby">Leer</button>
+                <button class="btn-hobby">Programar</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer [7] -->
+    <footer>
+        <p>© 2025 - Rafael Jaén Porras</p>
+    </footer>
+</body>
+
+</html>

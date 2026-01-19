@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Página web</title>
+    <link rel="stylesheet" href="miestilo.css">
+    /* Estilos globales y reseteo */
+    <style>
+
+    
+* {
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+/* Estilo para un título específico, aunque no se usa en el HTML anterior */
+#titulo {
+    text-align: center;
+    text-shadow: 5px 5px 5px gray;
+}
+
+/* Estilos de navegación (no visible en el HTML anterior, pero comunes para la cabecera) */
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+header ul li {
+    float: left;
+}
+
+header ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Efecto hover en los enlaces de navegación */
+nav ul li a:hover {
+    background-color: chocolate;
+}
+
+/* Contenido principal */
+main {
+    width: 70%;
+    float: left;
+    overflow: hidden;
+}
+
+/* Estilo para un ID llamado 'izquierda' (no usado en el HTML anterior) */
+#izquierda {
+    float: left;
+    width: 120px;
+    height: 120px;
+}
+
+/* Estilo para la imagen con ID 'derecha' (en el <article>) */
+#derecha {
+    float: right;
+    width: 75px;
+    height: 100px;
+}
+
+/* Estilo para todos los títulos <h2> */
+h2 {
+    padding-left: 10px;
+    background-color: #FCE9E1;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+/* Barra lateral */
+aside {
+    width: 28%;
+    float: left;
+    background-color: #CDDDE3;
+    border-radius: 30px;
+    border: solid 2px black;
+    margin: 10px;
+    box-shadow: 10px 10px 10px 10px grey;
+}
+
+/* Sección principal de contenido */
+section {
+    padding: 10px;
+    border-radius: 30px;
+    border: solid 2px black;
+    background-color: #CDDDE3;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px grey;
+}
+
+/* Estilo para la navegación dentro de <aside> */
+aside nav {
+    padding: 5px;
+}
+
+/* Pie de página */
+footer {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    clear: both;
+    text-align: right;
+
+
+}
+
+</style>
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo">LENGUAJE DE MARCAS</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>HTML5 ha llegado para quedarse</h2>
+                <img src="html5.png" id="izquierda">
+
+                <p>
+                    <strong>HTML5</strong> es la última versión de HTML.
+                    El término representa dos conceptos diferentes:
+                    se trata de una nueva versión de HTML,
+                    con nuevos elementos, atributos y comportamientos.
+                    Contiene un conjunto más amplio de tecnologías
+                    que permite a los sitios Web y a las aplicaciones
+                    ser más diversas y de gran alcance. A este conjunto
+                    se le llama HTML5 y amigos, a menudo reducido a HTML5.
+                    </p>
+            </article>
+        </section>
+    </main>
+    <article>
+                <h2>CSS3, la nueva versión de CSS</h2>
+                <img src="css3.png" id="derecha">
+                <p>
+                    CSS significa **Cascade Style Sheets**, también llamado **Hojas de Estilo en Cascada**. CSS es un lenguaje 
+                    de marcado que se emplea para dar formato a un sitio web. Es decir, funciona en conjunto con los archivos **HTML**. 
+                    Por esta razón, para crear un sitio web debes saber tanto **HTML** como **CSS**.
+                </p>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <nav>
+            <h2>Enlaces de Interés</h2>
+            <ul>
+                <li><a href="#" target="_blank">W3schools</a></li>
+                <li><a href="#" target="_blank">Formación Mediac</a></li>
+                <li><a href="#" target="_blank">Propiedades CSS3</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <footer>
+        Creado por Fede
+    </footer>
+
+</body>
+</html>
