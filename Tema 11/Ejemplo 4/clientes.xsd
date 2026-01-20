@@ -18,7 +18,7 @@
                         <xs:element name="regalo" type="xs:string" minOccurs="0" maxOccurs="unbounded"></xs:element>
 
                     </xs:sequence>
-                    <xs:attribute name="español" type="xs:string" use="required"></xs:attribute>
+                    <xs:attribute name="español" type="tipoespañol" use="required"></xs:attribute>
                 </xs:complexType>
 
                 </xs:element>
@@ -42,6 +42,14 @@
         <xs:restriction base="xs:integer">
             <xs:minInclusive value="3000"></xs:minInclusive>
             <xs:maxInclusive value="5000"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoespañol">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="si"></xs:enumeration>
+            <xs:enumeration value="no"></xs:enumeration>
+            <xs:enumeration value="SI"></xs:enumeration>
+            <xs:enumeration value="NO"></xs:enumeration>
         </xs:restriction>
     </xs:simpleType>
 
